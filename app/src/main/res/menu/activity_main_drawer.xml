@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/newsHome"
+        android:icon="@drawable/ic_home_icon"
+        android:title="Home"/>
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/ic_fav_list"
+        android:title="Favorites"/>
+    <item
+        android:id="@+id/newsProfile"
+        android:icon="@drawable/ic_profile_icon"
+        android:title="Profile"/>
+    <item
+        android:id="@+id/newsSignout"
+        android:icon="@drawable/ic_signout_icon"
+        android:title="Signout"/>
+</group>
+
+    <item android:title="Categories">
+    <menu>
+    <item
+        android:id="@+id/trendingButton"
+        android:icon="@drawable/ic_trending_icon"
+        android:title="Trending"/>
+    <item
+        android:id="@+id/generalButton"
+        android:icon="@drawable/ic_general_icon"
+        android:title="General"/>
+    <item
+        android:id="@+id/businessButton"
+        android:icon="@drawable/ic_business_icon"
+        android:title="Business"/>
+    <item
+        android:id="@+id/scienceButton"
+        android:icon="@drawable/ic_science_icon"
+        android:title="Science and nature"/>
+    <item
+        android:id="@+id/technologyButton"
+        android:icon="@drawable/ic_technology_icon"
+        android:title="Technology"/>
+</menu>
+    </item>
+</menu>

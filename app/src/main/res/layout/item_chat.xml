@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NewsArticle.View"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    app:cardElevation="@dimen/card_elevation">
+
+    <FrameLayout
+        android:background="@color/colorAccent"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/commentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_image_drop"
+                android:layout_width="@dimen/nav_image_size"
+                android:layout_height="@dimen/nav_image_size"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/nav_content_margin_StartEnd"
+                android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
+                android:contentDescription="test"
+                android:src="@drawable/ic_profile_icon"
+                app:civ_border_color="@color/green"
+                app:civ_border_width="@dimen/nav_image_circular_border_width" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userIdChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/newsAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/nav_user_name_text_size" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/newsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="3dp"
+                    android:background="@drawable/et_custom"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/nav_user_name_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_replyarticle" />
+
+            <ImageView
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_open_chat_response" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

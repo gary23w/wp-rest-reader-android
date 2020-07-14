@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="680dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="start"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_image_drop"
+                android:layout_width="@dimen/nav_image_size"
+                android:layout_height="@dimen/nav_image_size"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/nav_content_margin_StartEnd"
+                android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
+                android:contentDescription="test"
+                android:src="@drawable/ic_profile_icon"
+                app:civ_border_color="@color/green"
+                app:civ_border_width="@dimen/nav_image_circular_border_width" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User details:" />
+
+                <TextView
+                    android:id="@+id/tv_username_drop"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/nav_user_name_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_email_drop"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/nav_user_name_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/send_comment_webview"
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Comment"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:drawableStart="@drawable/ic_chat_send"
+            android:layout_gravity="center_horizontal"
+            android:elevation="10dp"
+            android:padding="5dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="20dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatListWebview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

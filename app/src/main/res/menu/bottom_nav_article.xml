@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/go_home_article"
+        android:icon="@drawable/ic_home_icon"
+        android:background="@color/grey"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/read_more"
+        android:icon="@drawable/ic_readmore"
+        android:background="@color/grey"
+        android:title="Read more"/>
+
+    <item
+        android:id="@+id/reply_article"
+        android:icon="@drawable/ic_replyarticle"
+        android:background="@color/grey"
+        android:title="Reply"/>
+
+</menu>

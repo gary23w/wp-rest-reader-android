@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_articles"
+        android:icon="@drawable/ic_main_bottom_nav"
+        android:title="Articles"/>
+
+    <item
+        android:id="@+id/topics_main"
+        android:icon="@drawable/ic_topics_main"
+        android:title="Topics"/>
+
+    <item
+        android:id="@+id/shareApp"
+        android:icon="@drawable/ic_share_main"
+        android:title="Share"/>
+
+</menu>

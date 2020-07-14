@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settings_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:theme="@style/ToolBarTheme" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="101dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/night_mode_ic" />
+
+                <Button
+                    android:id="@+id/nightmodeButton"
+                    android:layout_width="264dp"
+                    android:layout_height="match_parent"
+                    android:background="#656565"
+                    android:text="Night Mode"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="101dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/daymode_ic" />
+
+                <Button
+                    android:id="@+id/daymodeButton"
+                    android:layout_width="264dp"
+                    android:layout_height="match_parent"
+                    android:background="#9F7404"
+                    android:text="Day Mode"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red"
+                    android:onClick="deleteAccount"
+                    android:text="Delete account" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="237dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/newsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="3dp"
+                    android:background="@drawable/et_custom"
+                    android:padding="10dp"
+                    android:text="Beta Mode 1.1.1: Let me know what you think!  :-)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/nav_user_name_text_size" />
+
+                <Button
+                    android:id="@+id/reviewStuff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue"
+                    android:text="Review" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

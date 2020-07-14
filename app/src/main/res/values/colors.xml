@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3fc1c9</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#757575</color>
+    <color name="colorText">#000000</color>
+
+    <color name="color_transparent">#33000000</color>
+
+    <color name="toolbar_color_control_normal">#000000</color>
+
+    <color name="darkgreyText">#4F4F50</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="blue">#03A9F4</color>
+    <color name="green">#4CAF50</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="orange">#FF9800</color>
+    <color name="red">#F44336</color>
+    <color name="snackbar_error_color">#2196F3</color>
+
+    <color name="md_red_500">#970606</color>
+    <color name="md_red_700">#770404</color>
+    <color name="md_yellow_A400">#FBC02D</color>
+
+    <color name="md_lime_500">#6D9904</color>
+    <color name="md_lime_700">#587C02</color>
+    <color name="md_amber_A400">#F55E0C</color>
+
+    <color name="md_green_500">#047204</color>
+    <color name="md_green_700">#035203</color>
+    <color name="md_pink_A400">#D32F2F</color>
+
+    <color name="md_blue_500">#070786</color>
+    <color name="md_blue_700">#04045E</color>
+    <color name="md_turquoise_A400">#00796B</color>
+
+
+    <color name="grey">#E9EAEE</color>
+
+    <color name="goodgrey">#535353</color>
+
+    <color name="lightgrey">#EEEEEE</color>
+    <color name="MainBackground">#555353</color>
+    <color name="TopBar">#9C9C9F</color>
+</resources>

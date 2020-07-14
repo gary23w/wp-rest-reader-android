@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".view.ReplyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_reply"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:gravity="center"
+            android:theme="@style/ToolBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="406dp"
+            android:layout_height="671dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_reply">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardOne"
+                    android:layout_width="400dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_user_image_reply"
+                            android:layout_width="@dimen/nav_image_size"
+                            android:layout_height="@dimen/nav_image_size"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/nav_content_margin_StartEnd"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
+                            android:contentDescription="test"
+                            android:src="@drawable/ic_profile_icon"
+                            app:civ_border_color="@android:color/holo_green_light"
+                            app:civ_border_width="@dimen/nav_image_circular_border_width" />
+
+                        <LinearLayout
+                            android:layout_width="278dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_username_reply"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/app_name"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="486dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/postButton"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/colorAccent"
+                        android:drawableStart="@drawable/ic_chat_send"
+                        android:elevation="10dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Publish"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/chatBoxWork"
+                        android:layout_width="347dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:gravity="start"
+                        android:background="@drawable/et_custom"
+                        android:hint="Write your message."
+                        android:imeOptions="actionDone"
+                        android:inputType="textMultiLine"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

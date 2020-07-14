@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MockTheme"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    android:orientation="vertical"
+    app:cardElevation="@dimen/card_elevation">
+
+    <RelativeLayout
+        style="@style/MockTheme"
+        android:layout_width="match_parent"
+        android:layout_height="255dp">
+
+        <!-- News block -->
+        <RelativeLayout
+            android:id="@+id/newsImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/newsImage"
+                style="@style/NewsArticle.Image"
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/news_image" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/MockTheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/newsTitle"
+            style="@style/MockTheme"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:maxLines="3"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            tools:text="ABC News" />
+
+        <TextView
+            android:id="@+id/newsPublishedAt"
+            style="@style/MockTheme"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            tools:text="@string/str_test_date" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text=""
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="9dp"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

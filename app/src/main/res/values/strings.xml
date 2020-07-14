@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">News</string>
+
+    <!-- Content Description -->
+    <string name="news_image_desc">News Image</string>
+    <string name="news_image">news image</string>
+    <string name="str_test_date">22/02/2017</string>
+
+    <!-- Empty -->
+    <string name="no_news">No News</string>
+    <string name="msg_token_fmt"></string>
+    <string name="default_notification_channel_id">23</string>
+    <string name="fcm_message" />
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="please_wait">Please wait</string>
+    <string name="please_click_back_again_to_exit">Please click back again to exit</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_description_text">Put description here</string>
+    <string name="sign_up_description_text">Sign upping</string>
+    <string name="sign_up_goto">Sign up</string>
+    <string name="update">update</string>
+    <string name="my_profile_title">Profile</string>
+
+    <string name="my_desc">pro nipple twister. - Stay at home son</string>
+    <string name="about_me">About Me</string>
+    <string name="contact">Contact</string>
+</resources>

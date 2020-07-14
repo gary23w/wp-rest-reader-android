@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="406dp"
+        android:layout_height="783dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".activitys.ArticleActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_article_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="2dp"
+            android:theme="@style/ToolBarTheme" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="false"
+                app:layout_constraintBottom_toTopOf="@+id/navigationView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1000dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/newTitleArticle"
+                                style="@style/BoldItalic"
+                                android:layout_width="360dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:gravity="center"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="212dp" />
+
+                            <TextView
+                                android:id="@+id/timeStampArticle"
+                                style="@style/BoldCondensed"
+                                android:layout_width="360dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="30dp"
+                                android:gravity="center" />
+
+                            <ImageView
+                                android:id="@+id/newsIMAGE"
+                                android:layout_width="377dp"
+                                android:layout_height="500dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center"
+                                android:minHeight="400dp"
+                                android:scaleType="fitCenter" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/boxOne"
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/grey"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/newsDataArticle"
+                                android:layout_width="360dp"
+                                android:layout_height="400dp"
+                                android:layout_gravity="center"
+                                android:maxLength="500"
+                                android:maxLines="40"
+                                android:scrollbars="vertical"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/readMoreArticle"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="10dp"
+                                android:layout_marginBottom="60dp"
+                                android:background="@color/colorAccent"
+                                android:drawableStart="@drawable/ic_readmore"
+                                android:elevation="10dp"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Read more"
+                                android:textColor="@android:color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/shareArticle"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="60dp"
+                        android:background="@color/colorAccent"
+                        android:drawableStart="@drawable/ic_share_main"
+                        android:elevation="10dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Share"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/commentOnArticle"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:layout_marginBottom="60dp"
+                        android:background="@color/colorAccent"
+                        android:drawableStart="@drawable/ic_chat_send"
+                        android:elevation="10dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Comment"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/chatList"
+                        android:layout_width="385dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:attr/windowBackground"
+        android:theme="@style/ToolBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_article" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

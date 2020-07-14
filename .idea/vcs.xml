@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/GitHubAPI/GithubRepos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MemeGenerator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RANDOM-DESKTOP-APPS/birdie-android-develop/birdie-android-develop" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RetrofitScaffold/StackOverflowQuery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/birdie-android-Developer/birdie-android-Developer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/birdieandroidmvvm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cleanarch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/datingapp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/encryption" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/kmp/kmp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/retrofit/RetrofitProject" vcs="Git" />
+  </component>
+</project>
